@@ -30,7 +30,7 @@ At the hit point of a jaw stab (vanilla's `OnWeaponSwingHitPoint` event, which r
 
 ## Install
 
-Steam Workshop (link after the first upload), or copy `Contents/mods/ReliableJawStab` into `%USERPROFILE%\Zomboid\mods\`.
+[Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3841038777), or copy `Contents/mods/ReliableJawStab` into `%USERPROFILE%\Zomboid\mods\`.
 
 ## Testing
 

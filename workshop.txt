@@ -1,4 +1,5 @@
 version=1
+id=3841038777
 title=[42.22.2] Reliable Jaw Stab
 description=[h1]Reliable Jaw Stab[/h1]
 description=Your character plays the jaw stab, but the zombie just keeps walking? In multiplayer, a jaw stab started near the edge of its range can miss: it is chosen when the attack starts, but the hit is checked later, and lag corrections can move the zombie out of reach in between. Then no hit reaches the server.
