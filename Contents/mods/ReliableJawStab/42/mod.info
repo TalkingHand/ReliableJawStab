@@ -1,0 +1,8 @@
+name=Reliable Jaw Stab
+id=ReliableJawStab
+description=A jaw stab that has started lands on its zombie, even when multiplayer lag moved the zombie a little out of reach.
+poster=poster.png
+author=TalkingHand
+url=https://github.com/TalkingHand/ReliableJawStab
+modversion=0.1.0
+versionMin=42.0

@@ -1,0 +1,14 @@
+# checked: 42.22.2
+# kind	target	note
+event	Events.OnWeaponSwingHitPoint	(player, weapon); fired in CombatManager.attackCollisionCheck right before calculateHitInfoList (decompiled 42.22.2 line ~995)
+java-call	IsoGameCharacter:getVariableString("ZombieHitReaction") / isCriticalHit() / isAimAtFloor() / getDotWithForwardDirection(x,y) / getForwardDirection()
+java-call	IsoLivingCharacter:isDoShove()
+java-call	IsoPlayer:isLocalPlayer()
+java-call	IsoZombie:isDead() / isOnFloor() / isProne() / getOnlineID()
+java-call	IsoMovingObject:setX/Y, setLastX/Y, setNextX/Y, setCurrentSquareFromPosition(), getCurrentSquare()
+java-call	IsoGridSquare:isBlockedTo(sq) / getX() / getY()
+java-call	IsoCell:getZombieList() / getGridSquare(x,y,z)
+data	ZombieHitReaction value "KnifeDeath"	set by AnimSets/player/melee/1handed/KnifeCrit.xml, KnifeCritStart.xml, KnifeCritNoWeapon.xml at 10% of the animation
+assume	jaw stab starts when the zombie is closer than MinRange, the hit is decided later against MaxRange and the swing angle	CombatManager.calcValidTargets/isCloseKill at attack start; calculateHitInfoList -> calculateHitListWeapon at the hit point; knife MinRange 0.61, MaxRange 0.9 (scripts/generated/items/weapon.txt)
+assume	nothing stops the target zombie between the start of the jaw stab and the hit point	no code found in IsoZombie/CombatManager; zombie KnifeDeath animations (AnimSets/zombie/falldown-knifedeath) play after the hit
+assume	a multiplayer client sends the hit packet only for targets found at the hit point; the server kills with the KnifeDeath x1000 range modifier	PlayerHitZombiePacket, Hit.process, CombatManager.getRangeDel; server distance anti-cheat allows MaxRange + 5 tiles (AntiCheatHitWeapon.isDistanceExceeded)

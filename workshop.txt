@@ -1,0 +1,21 @@
+version=1
+title=[42.22.2] Reliable Jaw Stab
+description=[h1]Reliable Jaw Stab[/h1]
+description=Your character plays the jaw stab, but the zombie just keeps walking? In multiplayer, a jaw stab started near the edge of its range can miss: it is chosen when the attack starts, but the hit is checked later, and lag corrections can move the zombie out of reach in between. Then no hit reaches the server.
+description=
+description=[list]
+description=[*][b]A started jaw stab lands.[/b] At the hit point, if the nearest standing zombie drifted out of reach but is still within 1.5 tiles, it is put back in front of you on your client, so the normal hit is sent and the server kills it the vanilla way.
+description=[*][b]Nothing else changes.[/b] When a jaw stab can start, the crit roll, knife sticking, normal stabs and other weapons are vanilla. A zombie already in reach is left alone, and a zombie behind a wall, door or window is never pulled.
+description=[/list]
+description=
+description=[h2]Compatibility[/h2]
+description=Lua only, client side, no vanilla files replaced. Each player who wants the fix needs it; the server does not. Safe to add to or remove from a save. Should work alongside other jaw stab mods (Better Jaw Stabs, One Clean Jaw Stab), since it only acts at the hit point; not tested together. Checked in single player with a simulated drift (without the mod the zombie survives, with it the jaw stab kills). Multiplayer not tested.
+description=
+description=[h2]한국어[/h2]
+description=턱 찌르기(단검 즉사기) 동작은 나오는데 좀비가 그대로 걸어가는 멀티 버그를 고칩니다. 턱 찌르기는 공격을 시작할 때 정해지지만 실제 타격은 그 뒤에 판정되는데, 그 사이 렉 보정으로 좀비가 사거리 밖으로 밀리면 타격이 서버에 가지 않습니다. 이 모드는 찌르는 순간 가장 가까운 서 있는 좀비가 사거리를 벗어났지만 1.5칸 안이면 내 화면에서 정면으로 되돌려, 정상 타격이 서버로 가게 합니다. 발동 조건, 크리 확률, 칼 박힘, 일반 공격은 바닐라 그대로이고, 벽·문·창 너머 좀비는 당기지 않습니다. 클라이언트 Lua 모드로 서버에는 필요 없고, 세이브에 넣고 빼도 됩니다. 싱글에서 위치 어긋남을 흉내 내어 확인했고(모드 없으면 좀비가 살고, 있으면 턱 찌르기로 죽음) 멀티는 확인하지 않았습니다.
+description=
+description=Source: https://github.com/TalkingHand/ReliableJawStab
+description=
+description=[url=https://ko-fi.com/talkinghands2285][img]https://raw.githubusercontent.com/TalkingHand/ReliableJawStab/main/art/kofi_button.png[/img][/url]
+tags=Build 42;Multiplayer;Weapons
+visibility=public
