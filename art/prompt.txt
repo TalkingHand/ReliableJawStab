@@ -1,0 +1,17 @@
+Attach: _art/refs/character_sheet.webp + _art/refs/style_doubleclick.png + _art/refs/chalk_zombie_sheet.png
+
+Use the attached character sheet for the character's identity, the attached preview image for art style, and the attached chalk sheet for the chalk zombie.
+
+Character (keep exactly): early-30s male survivor, short scruffy brown beard, messy brown hair, faded gray headband, red-and-black buffalo plaid flannel with rolled sleeves over dark gray T-shirt, olive work pants, brown work boots.
+Style: bold black ink outlines, gritty comic style, muted desaturated palette, red accent. Square 1:1 composition, readable at small thumbnail size. No text, no onomatopoeia, no glowing effects.
+
+Scene: an empty small-town street at dusk. One shambling zombie has turned away and is stepping off to the right, its front foot still mid-stride, leaning away. The survivor stands right behind it. His LEFT hand grabs the back of the zombie's collar and yanks it back toward him. His RIGHT hand drives a hunting knife up under the zombie's jaw from below; the blade is hidden under the chin, only the handle and his fist show, no gore beyond a small dark splash. His face is calm and unimpressed, eyebrows slightly raised, as if saying "where do you think you're going". Exactly one zombie in the picture. Medium shot, both full bodies visible from the knees up, the knife hand and the collar grab clearly readable.
+
+Small on the front face of a street lamp post at the left edge: the chalk zombie from the attached chalk sheet (white chalk stick figure, X eyes, jagged teeth), both arms raised in shock, about the size of the survivor's head. The chalk zombie stays inside the front face of the post. No chalk drawing anywhere else in the picture.
+
+--- Edits (attach only the previous result each time) ---
+1) First result: one hand held both the collar and the knife, the knife went through the back of the neck. Edit asked to move the knife to the hanging hand -> the generator added a second hand on the extended arm instead.
+2) Final edit (adopted, art/cover.png):
+Edit the attached image. Keep everything else exactly the same: the street, the lamp post with the chalk zombie, the survivor's face, body, the hanging hand at his side, the zombie's tilted-back head and walking pose, the knife under the chin with the blood splash, the art style.
+Fix only the extended arm: it has two hands. It must end in exactly ONE hand: the fist holding the knife handle under the zombie's chin. Remove the other hand that grips the zombie's shirt collar, and smooth the shirt collar where that hand was.
+The survivor has exactly two hands in total: one hanging at his side, one holding the knife. No text, no onomatopoeia.
