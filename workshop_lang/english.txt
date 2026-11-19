@@ -1,0 +1,27 @@
+Your character plays the jaw stab, but the zombie just keeps walking? In multiplayer, a jaw stab that starts near the edge of the knife's range can miss. The jaw stab is chosen when the attack starts, but the hit is checked later, and in between lag corrections can move the zombie out of reach. Then no hit reaches the server and the zombie walks on.
+
+[b]A jaw stab that has started now lands. Everything else stays vanilla.[/b]
+
+[h2]How it works[/h2]
+[list]
+[*][b]At the hit point:[/b] if the nearest standing zombie on your floor has drifted out of reach but is still within 1.5 tiles, it is put back in front of you on your client. The normal hit is then sent, and the server kills the zombie the vanilla way.
+[*][b]Nothing else changes:[/b] when a jaw stab can start, the crit roll, the knife getting stuck, normal stabs and other weapons are all vanilla. A zombie that is already in reach is left alone.
+[*][b]No stabs through walls:[/b] a zombie is only moved across open ground from your square or the one next to it, never through a wall, closed door or window.
+[/list]
+
+[h2]Limits[/h2]
+[list]
+[*]Tested in single player with a simulated drift: without the mod the zombie survives, with it the jaw stab kills. Not tested in multiplayer.
+[*]The wall, door and window check has not been tried in game yet.
+[/list]
+
+[h2]Compatibility[/h2]
+[list]
+[*]Lua only, runs on the client. No vanilla files are replaced, and the kill itself is handled by the server the vanilla way.
+[*]Should work alongside other jaw stab mods (Better Jaw Stabs, One Clean Jaw Stab), since it only acts at the hit point. Not tested together.
+[*]Safe to add to or remove from an existing save.
+[/list]
+
+Source: https://github.com/TalkingHand/ReliableJawStab
+
+[url=https://ko-fi.com/talkinghands2285][img]https://raw.githubusercontent.com/TalkingHand/ReliableJawStab/main/art/kofi_button.png[/img][/url]
